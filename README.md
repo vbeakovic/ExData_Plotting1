@@ -1,114 +1,72 @@
+# Exploratory Data Analysis - Course Project 1
+
 ## Introduction
 
+This repository is a course project for the Exploratory Data Analysis Course on
+Coursera. This is the first course project of the two projects that are part of this course.
+
+## Data used for this assignment
 This assignment uses data from
 the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine
 Learning Repository</a>, a popular repository for machine learning
-datasets. In particular, we will be using the "Individual household
-electric power consumption Data Set" which I have made available on
-the course web site:
+datasets. In particular, the "Individual household
+electric power consumption Data Set" is used. More  information about the data 
+may be found in the the <a href="CodeBook.md">CodeBook.md</a> in the root of this repository.
 
+## Scope of the assignment
+The scope of the assignment is to produce four exploratoy plots in png formats showing
+various variables of Energy Power Consumption during a two day period.
+Examples of how the plots should look can be found at the bottom of this document.
 
-* <b>Dataset</b>: <a href="https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip">Electric power consumption</a> [20Mb]
+## Files and directories in the repository
+* figure directory - contains the four example plots in png format displayed at the bottom of this document
+* data directory - contains a zip archive with the source data for the assignment
+* CodeBook.md - info about the date, files used to get the data, transformations and variables
+* plot1.R - R code used to produce the first plot, plot1.png
+* plot2.R - R code used to produce the second plot, plot2.png
+* plot3.R - R code used to produce the third plot, plot3.png
+* plot4.R - R code used to produce the fourth plot, plot4.png
+* README.md - this file
+* plot1.png, plot2.png, plot3.png, plot4.png
 
-* <b>Description</b>: Measurements of electric power consumption in
-one household with a one-minute sampling rate over a period of almost
-4 years. Different electrical quantities and some sub-metering values
-are available.
+## Explanation about the R scripts
 
+The scripts has also followed the guidelines of the Getting and Cleaning Data course.
+A tidy data set is created and one redundant colums has been removed.
 
-The following descriptions of the 9 variables in the dataset are taken
-from
-the <a href="https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption">UCI
-web site</a>:
+All the four scripts have the same structure. The only differ in the last part which produces the plot.
+The scripts have the following parts:
 
-<ol>
-<li><b>Date</b>: Date in format dd/mm/yyyy </li>
-<li><b>Time</b>: time in format hh:mm:ss </li>
-<li><b>Global_active_power</b>: household global minute-averaged active power (in kilowatt) </li>
-<li><b>Global_reactive_power</b>: household global minute-averaged reactive power (in kilowatt) </li>
-<li><b>Voltage</b>: minute-averaged voltage (in volt) </li>
-<li><b>Global_intensity</b>: household global minute-averaged current intensity (in ampere) </li>
-<li><b>Sub_metering_1</b>: energy sub-metering No. 1 (in watt-hour of active energy). It corresponds to the kitchen, containing mainly a dishwasher, an oven and a microwave (hot plates are not electric but gas powered). </li>
-<li><b>Sub_metering_2</b>: energy sub-metering No. 2 (in watt-hour of active energy). It corresponds to the laundry room, containing a washing-machine, a tumble-drier, a refrigerator and a light. </li>
-<li><b>Sub_metering_3</b>: energy sub-metering No. 3 (in watt-hour of active energy). It corresponds to an electric water-heater and an air-conditioner.</li>
-</ol>
+* Load libraries - dplyr is used for subsetting
+* Setting system locale to english to display English labels for weekdays (deafault locale on my machine is Croatian)
+* Unzipping of the data file
+* Reading in the data
+* Tidying and formating data
+* Subsetting
+* Plotting and outputing to png format
 
-## Loading the data
-
-
-
-
-
-When loading the dataset into R, please consider the following:
-
-* The dataset has 2,075,259 rows and 9 columns. First
-calculate a rough estimate of how much memory the dataset will require
-in memory before reading into R. Make sure your computer has enough
-memory (most modern computers should be fine).
-
-* We will only be using data from the dates 2007-02-01 and
-2007-02-02. One alternative is to read the data from just those dates
-rather than reading in the entire dataset and subsetting to those
-dates.
-
-* You may find it useful to convert the Date and Time variables to
-Date/Time classes in R using the `strptime()` and `as.Date()`
-functions.
-
-* Note that in this dataset missing values are coded as `?`.
-
-
-## Making Plots
-
-Our overall goal here is simply to examine how household energy usage
-varies over a 2-day period in February, 2007. Your task is to
-reconstruct the following plots below, all of which were constructed
-using the base plotting system.
-
-First you will need to fork and clone the following GitHub repository:
-[https://github.com/rdpeng/ExData_Plotting1](https://github.com/rdpeng/ExData_Plotting1)
-
-
-For each plot you should
-
-* Construct the plot and save it to a PNG file with a width of 480
-pixels and a height of 480 pixels.
-
-* Name each of the plot files as `plot1.png`, `plot2.png`, etc.
-
-* Create a separate R code file (`plot1.R`, `plot2.R`, etc.) that
-constructs the corresponding plot, i.e. code in `plot1.R` constructs
-the `plot1.png` plot. Your code file **should include code for reading
-the data** so that the plot can be fully reproduced. You should also
-include the code that creates the PNG file.
-
-* Add the PNG file and R code file to your git repository
-
-When you are finished with the assignment, push your git repository to
-GitHub so that the GitHub version of your repository is up to
-date. There should be four PNG files and four R code files.
-
-
-The four plots that you will need to construct are shown below. 
-
-
-### Plot 1
+## Example Plots
+### Example Plot 1
 
 
 ![plot example 1](figure/plot_example_1.png) 
 
 
-### Plot 2
+### Example Plot 2
 
 ![plot example 2](figure/plot_example_2.png) 
 
 
-### Plot 3
+### Example Plot 3
 
 ![plot example 3](figure/plot_example_3.png)  
 
 
-### Plot 4
+### Example Plot 4
 
 ![plot example 4](figure/plot_example_4.png)  
 
+## Acknowledgements
+This assignment uses data from
+the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine
+Learning Repository</a>
