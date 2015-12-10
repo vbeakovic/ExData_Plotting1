@@ -27,14 +27,14 @@ are available.
 </ol>
 
 ## Files used to import data, after extraction from the zip file
-* ./data/household_power_consumption.txt
+* /data/household_power_consumption.txt
 
 
 ## Transformations
-The final data set was obtained reading in the source data set. Date and Time varibales were merge into one POSIXct variable. The colum with date and time has been
-renamed to date_time. To conform with tidy dataset principles the Date column has been removed is the date info is now in the date_time variable.
+The final data set was obtained by reading in the source dataset. Date and Time varibales were merged into one POSIXct variable. The colum with date and time has been
+renamed to date_time. To conform with tidy dataset principles the Date column has been removed since the date info is now in the date_time variable.
 After tidying the data has been subsetted, the final dataset contains Electric Power Consumption for two days in February 2007. (from 01.02.2007 to 02.02.2007)
-The subsette data have been used to produce the plots.
+The subsetted data have been used to produce the plots.
 
 
 
