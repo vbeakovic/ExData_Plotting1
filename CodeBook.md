@@ -26,7 +26,7 @@ are available.
 <li><b>Sub_metering_3</b>: energy sub-metering No. 3 (in watt-hour of active energy). It corresponds to an electric water-heater and an air-conditioner.</li>
 </ol>
 
-## Files used to import data, after extraction from the zip file
+## Files used to import data, after extraction from the zip file in the data folder
 * data/household_power_consumption.txt
 
 
