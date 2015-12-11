@@ -1,4 +1,4 @@
-# Getting and Cleaning Data - Course Project
+# Exploratory Data Analysis - Course Project 1
 
 ## Introduction
 The final dataset of this project was created by tidying and subsetting the source data set from the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine
@@ -27,7 +27,7 @@ are available.
 </ol>
 
 ## Files used to import data, after extraction from the zip file
-* /data/household_power_consumption.txt
+* data/household_power_consumption.txt
 
 
 ## Transformations
