@@ -21,18 +21,18 @@ Examples of how the plots should look can be found at the bottom of this documen
 ## Files and directories in the repository
 * figure directory - contains the four example plots in png format displayed at the bottom of this document
 * data directory - contains a zip archive with the source data for the assignment
-* CodeBook.md - info about the date, files used to get the data, transformations and variables
+* CodeBook.md - info about the data, files, transformations and variables
 * plot1.R - R code used to produce the first plot, plot1.png
 * plot2.R - R code used to produce the second plot, plot2.png
 * plot3.R - R code used to produce the third plot, plot3.png
 * plot4.R - R code used to produce the fourth plot, plot4.png
 * README.md - this file
-* plot1.png, plot2.png, plot3.png, plot4.png
+* plot1.png, plot2.png, plot3.png, plot4.png - produced plots
 
 ## Explanation about the R scripts
 
 The scripts has also followed the guidelines of the Getting and Cleaning Data course.
-A tidy data set is created and one redundant colums has been removed.
+A tidy data set is created and one redundant column has been removed.
 
 All the four scripts have the same structure. The only differ in the last part which produces the plot.
 The scripts have the following parts:
